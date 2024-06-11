@@ -19,7 +19,7 @@ export default class Setroute extends Component {
     }
   
   componentDidUpdate(){
-    if(this.state.coords.length == 2 && this.state.wayPoint.length == 0){
+    if(this.state.coords.length == 2 && this.state.wayPoint.length == 0)
                     fetch(url).then((res)=>res.json())
           .then((resJson)=>{
           let wayPoint = resJson.routes[0].overview_polyline.points
@@ -33,7 +33,7 @@ export default class Setroute extends Component {
           this.setState({
             wayPoint : coords
           })
-          fetch("https://api.mlab.com/api/1/databases/tracker/collections/location/5b19feb45d0e6502064f506a?apiKey=QiykEcfyrO9zzNer8HSgDWUEfCBm54_q",{
+{
       method: 'PUT',
       headers:{
         Accept: 'application/json',
