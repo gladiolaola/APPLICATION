@@ -20,8 +20,7 @@ export default class Setroute extends Component {
   
   componentDidUpdate(){
     if(this.state.coords.length == 2 && this.state.wayPoint.length == 0){
-          let url='https://maps.googleapis.com/maps/api/directions/json?origin='+this.state.startCoords.latitude+','+this.state.startCoords.longitude+'&destination='+this.state.endCoords.latitude+','+this.state.endCoords.longitude+'&key=AIzaSyCaB9BWtu4O8YbZ1o0Ut4PIDPwStddObbA';
-          fetch(url).then((res)=>res.json())
+                    fetch(url).then((res)=>res.json())
           .then((resJson)=>{
           let wayPoint = resJson.routes[0].overview_polyline.points
           let wayPointCoords = Decode.decode(wayPoint)
