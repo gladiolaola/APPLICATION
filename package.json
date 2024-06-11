@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "google-polyline": "1.0.0",
+    "react-native-elements": "0.18.5",
+    "react-navigation": "2.0.1"
+  }
+}
