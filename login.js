@@ -17,7 +17,6 @@ export default class Login extends Component {
   }
   
   componentWillMount(){
-    fetch('https://api.mlab.com/api/1/databases/tracker/collections/userInfo?apiKey=QiykEcfyrO9zzNer8HSgDWUEfCBm54_q')
     .then((res) =>res.json())
     .then((resJson)=> {
       //alert(JSON.stringify(resJson))
